@@ -1,6 +1,6 @@
 package NewCar;
 
-public class CarMain {
+public class CarMain extends Util {
     public static void main(String[] args) {
         Door door1 = new Door(1, 70, "Toyota");
         Door door2 = new Door (2, 80, "Bosh");
@@ -17,6 +17,11 @@ public class CarMain {
         AirBag airBag1 = new AirBag(1, 35, "Toyota");
         AirBag airBag2 = new AirBag(2, 45, "Bosh");
 
+        Car car1 = new Car(door1, engine1, hood1, bumper1, airBag1);
+        Car car2 = new Car(door2, engine2, hood2, bumper2, airBag2);
+
+        System.out.println(carPrice(car1));
+        System.out.println(carPrice(car2));
 
 
     }
