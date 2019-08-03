@@ -10,16 +10,27 @@ public class Car {
     private AirBag airBag;
     private Bumper bumper;
 
+    public String getCarModel() {
+        return carModel;
+    }
+
+    public void setCarModel(String carModel) {
+        this.carModel = carModel;
+    }
+
+    private String carModel;
+
     public Car() {
 
     }
 
-    public Car(Door door, Engine engine, Hood hood, AirBag airBag, Bumper bumper) {
+    public Car(Door door, Engine engine, Hood hood, AirBag airBag, Bumper bumper, String carModel) {
         this.door = door;
         this.engine = engine;
         this.hood = hood;
         this.airBag = airBag;
         this.bumper = bumper;
+        this.carModel = carModel;
     }
 
     public Door getDoor() {
