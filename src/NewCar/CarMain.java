@@ -17,11 +17,14 @@ public class CarMain extends Util {
         AirBag airBag1 = new AirBag(1, 35, "Toyota");
         AirBag airBag2 = new AirBag(2, 45, "Bosh");
 
-        Car car1 = new Car(door1, engine1, hood1, bumper1, airBag1);
-        Car car2 = new Car(door2, engine2, hood2, bumper2, airBag2);
+        Car car1 = new Car(door1, engine1, hood1, airBag1, bumper1, "BMW");
+        Car car2 = new Car(door2, engine2, hood2, airBag2, bumper2, "Toyota");
+        Util util = new Util();
 
-        System.out.println(carPrice(car1));
-        System.out.println(carPrice(car2));
+        System.out.println(Util.carPrice(car1));
+        System.out.println(Util.carPrice(car2));
+        System.out.println(car1.getCarModel());
+        System.out.println(car2.getCarModel());
 
 
     }
